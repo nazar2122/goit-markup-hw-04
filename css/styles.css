@@ -127,18 +127,44 @@ img {
   margin-left: auto;
   display: flex;
 }
+.icon-mail:hover,
+.icon-mail:focus {
+  color: var(--primary-touch-color);
+}
+
+.icon-mail {
+  display: inline-block;
+  margin-right: 10px;
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+}
 .mail .mail-namb + .mail-namb {
   margin-left: 50px;
 }
 
 /* заголовок */
 .hero {
+  /* background-color: #c4c4c4; */
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: var(--primary-button-text-color);
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header.jpg);
 }
-
 .title {
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -147,7 +173,6 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  color: var(--primary-button-text-color);
 }
 /* кнопка 1 */
 .button-one {
@@ -194,7 +219,20 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
+.antena {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: ;
+  border-radius: 4px;
+}
+.icon-antenna {
+  margin-bottom: 30px;
+  display: block;
+}
 .text {
   width: 270px;
   font-size: 14px;
