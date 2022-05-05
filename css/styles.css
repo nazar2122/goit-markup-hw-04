@@ -110,9 +110,10 @@ img {
   color: var(--primary-touch-color);
 }
 .mail-header {
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -127,17 +128,19 @@ img {
   margin-left: auto;
   display: flex;
 }
+
 .icon-mail:hover,
 .icon-mail:focus {
-  color: var(--primary-touch-color);
+  fill: currentColor;
 }
 
 .icon-mail {
-  display: inline-block;
   margin-right: 10px;
   fill: currentColor;
-  width: 16px;
-  height: 12px;
+  background-size: auto;
+}
+.icon-mail:hover {
+  fill: currentColor;
 }
 .mail .mail-namb + .mail-namb {
   margin-left: 50px;
@@ -220,19 +223,20 @@ img {
   color: var(--primary-text-color);
 }
 .antena {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 270px;
   height: 120px;
+
   margin-bottom: 30px;
-  background: ;
   border-radius: 4px;
+  background-color: #f5f4fa;
 }
-.icon-antenna {
-  margin-bottom: 30px;
-  display: block;
+.hang-text .antena + .antena {
+  margin-left: 30px;
 }
+
 .text {
   width: 270px;
   font-size: 14px;
@@ -300,6 +304,31 @@ img {
   letter-spacing: 0.03em;
 }
 
+.social {
+  display: flex;
+  list-style: none;
+}
+.social .social-item + .social-item {
+  margin-left: 10px;
+}
+.social-item {
+  border-radius: 50%;
+}
+.social-link {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+}
+.social-link:hover,
+.social.link:focus {
+  background-color: var(--primary-touch-color);
+  fill: var(--primary-button-text-color);
+}
+
 .text-center {
   padding: 30px 30px;
   box-sizing: border-box;
@@ -315,6 +344,7 @@ img {
   letter-spacing: 0.03em;
 }
 .subtitle {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
