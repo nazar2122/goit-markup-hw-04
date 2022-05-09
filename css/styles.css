@@ -324,7 +324,7 @@ img {
   fill: #afb1b8;
 }
 .social-link:hover,
-.social.link:focus {
+.social-link:focus {
   background-color: var(--primary-touch-color);
   fill: var(--primary-button-text-color);
 }
@@ -389,7 +389,8 @@ img {
 .client-item .clients-image + .clients-image {
   margin-left: 30px;
 }
-.clients-list:hover {
+.clients-list:hover,
+.clients-list:focus {
   fill: var(--primary-touch-color);
   border-color: var(--primary-touch-color);
 }
@@ -469,7 +470,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+ 
   margin-bottom: 20px;
 }
 .futer-social {
@@ -486,7 +487,8 @@ img {
   fill: var(--primary-button-text-color);
   background: rgba(255, 255, 255, 0.1);
 }
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--primary-touch-color);
   fill: var(--primary-button-text-color);
 }
